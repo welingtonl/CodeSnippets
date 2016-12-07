@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ppr</Title>
+			<Shortcut>ppr</Shortcut>
+			<Description>Code snippet Para property Field Required configuration Entity framework Fluent API</Description>
+			<Author>Welington Lourenço </Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>campo</ID>
+					<Default>campo</Default>
+					<ToolTip>Campo</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>tipo</ID>
+					<Default>varchar</Default>
+					<ToolTip>Tipo Campo</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>tamanho</ID>
+					<Default>100</Default>
+					<ToolTip>Tamanho Campo</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[ Property(p => p.$campo$)
+					.IsRequired()
+					.HasColumnName("$campo$")
+					.HasColumnType("$tipo$")
+					.HasMaxLength($tamanho$);]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
